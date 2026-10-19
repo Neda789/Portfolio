@@ -630,7 +630,7 @@ h1,h2,h3,h4{ font-family:var(--font-display); font-weight:700; letter-spacing:.0
   font-family:var(--font-display); font-size:.78rem; letter-spacing:.12em; text-transform:uppercase;
   color:var(--violet-4); margin-bottom:16px;
 }
-.sidebar-row{ display:flex; justify-content:space-between; padding:10px 0; border-bottom:1px solid var(--border-soft); font-size:.88rem; }
+.sidebar-row{ display:flex; justify-content:space-between; gap:20px; padding:10px 0; border-bottom:1px solid var(--border-soft); font-size:.88rem; }
 .sidebar-row:last-child{ border-bottom:none; }
 .sidebar-row span:first-child{ color:var(--text-muted); }
 .sidebar-row span:last-child{ color:var(--cream-2); font-weight:600; }
