@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="800" height="520">
+<defs>
+
+  <radialGradient id="bgrad1203" cx="526" cy="146" r="720" gradientUnits="userSpaceOnUse">
+    <stop offset="0%" stop-color="#4c1d95" stop-opacity="0.55"/>
+    <stop offset="35%" stop-color="#141420" stop-opacity="1"/>
+    <stop offset="100%" stop-color="#07070c" stop-opacity="1"/>
+  </radialGradient>
+  <filter id="glow1203" x="-60%" y="-60%" width="220%" height="220%">
+    <feGaussianBlur stdDeviation="8.0" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="softblur1203" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="28.0"/>
+  </filter>
+
+</defs>
+<rect x="0" y="0" width="800" height="520" fill="url(#bgrad1203)"/>
+<polygon points="588.5,260.0 594.5,321.4 569.6,369.5 498.0,404.0 433.6,426.5 365.0,444.8 296.7,404.6 220.5,374.2 181.3,325.2 179.2,260.0 232.3,201.6 223.2,157.3 295.8,122.5 364.0,77.7 433.9,102.4 511.7,122.1 573.2,158.6 613.4,200.8" fill="#4c1d95" fill-opacity="0.25" stroke="#a78bfa" stroke-opacity="0.6" stroke-width="1.5" filter="url(#softblur1203)"/>
+<g stroke="#a78bfa" stroke-opacity="0.3">
+<line x1="483.2" y1="329.7" x2="508.4" y2="288.9" stroke-width="1"/>
+<line x1="466.0" y1="246.5" x2="518.7" y2="277.8" stroke-width="1"/>
+<line x1="402.5" y1="235.6" x2="396.2" y2="297.4" stroke-width="1"/>
+<line x1="402.5" y1="235.6" x2="388.7" y2="184.3" stroke-width="1"/>
+<line x1="402.5" y1="235.6" x2="380.1" y2="226.2" stroke-width="1"/>
+<line x1="514.6" y1="290.0" x2="518.7" y2="277.8" stroke-width="1"/>
+<line x1="310.7" y1="297.4" x2="296.1" y2="293.2" stroke-width="1"/>
+<line x1="472.9" y1="214.8" x2="518.7" y2="277.8" stroke-width="1"/>
+<line x1="388.7" y1="184.3" x2="385.2" y2="173.8" stroke-width="1"/>
+<line x1="388.7" y1="184.3" x2="380.1" y2="226.2" stroke-width="1"/>
+</g>
+<circle cx="483.2" cy="329.7" r="3.6" fill="#efe6d0" fill-opacity="0.8" filter="url(#glow1203)"/>
+<circle cx="466.0" cy="246.5" r="2.1" fill="#efe6d0" fill-opacity="0.8" filter="url(#glow1203)"/>
+<circle cx="269.7" cy="166.5" r="3.2" fill="#efe6d0" fill-opacity="0.8" filter="url(#glow1203)"/>
+<circle cx="519.2" cy="176.8" r="3.0" fill="#efe6d0" fill-opacity="0.8" filter="url(#glow1203)"/>
+<circle cx="402.5" cy="235.6" r="3.4" fill="#efe6d0" fill-opacity="0.8" filter="url(#glow1203)"/>
+<circle cx="514.6" cy="290.0" r="3.6" fill="#efe6d0" fill-opacity="0.8" filter="url(#glow1203)"/>
+<circle cx="310.7" cy="297.4" r="2.6" fill="#efe6d0" fill-opacity="0.8" filter="url(#glow1203)"/>
+<circle cx="472.9" cy="214.8" r="3.2" fill="#efe6d0" fill-opacity="0.8" filter="url(#glow1203)"/>
+<circle cx="396.2" cy="297.4" r="3.1" fill="#efe6d0" fill-opacity="0.8" filter="url(#glow1203)"/>
+<circle cx="541.2" cy="178.8" r="2.9" fill="#efe6d0" fill-opacity="0.8" filter="url(#glow1203)"/>
+<circle cx="388.7" cy="184.3" r="3.2" fill="#efe6d0" fill-opacity="0.8" filter="url(#glow1203)"/>
+<circle cx="296.1" cy="293.2" r="2.5" fill="#efe6d0" fill-opacity="0.8" filter="url(#glow1203)"/>
+<circle cx="385.2" cy="173.8" r="3.0" fill="#efe6d0" fill-opacity="0.8" filter="url(#glow1203)"/>
+<circle cx="508.4" cy="288.9" r="2.3" fill="#efe6d0" fill-opacity="0.8" filter="url(#glow1203)"/>
+<circle cx="380.1" cy="226.2" r="3.6" fill="#efe6d0" fill-opacity="0.8" filter="url(#glow1203)"/>
+<circle cx="518.7" cy="277.8" r="3.1" fill="#efe6d0" fill-opacity="0.8" filter="url(#glow1203)"/>
+</svg>

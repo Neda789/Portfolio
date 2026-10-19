@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="800" height="520">
+<defs>
+
+  <radialGradient id="bgrad203" cx="236" cy="279" r="720" gradientUnits="userSpaceOnUse">
+    <stop offset="0%" stop-color="#4c1d95" stop-opacity="0.55"/>
+    <stop offset="35%" stop-color="#141420" stop-opacity="1"/>
+    <stop offset="100%" stop-color="#07070c" stop-opacity="1"/>
+  </radialGradient>
+  <filter id="glow203" x="-60%" y="-60%" width="220%" height="220%">
+    <feGaussianBlur stdDeviation="8.0" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="softblur203" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="28.0"/>
+  </filter>
+
+</defs>
+<rect x="0" y="0" width="800" height="520" fill="url(#bgrad203)"/>
+<g stroke="#8b5cf6" stroke-width="1.4" fill="none">
+<path d="M88.9 0.0 L88.9 0.0 L177.8 0.0" stroke-opacity="0.39"/>
+<path d="M266.7 0.0 L266.7 0.0 L266.7 0.0" stroke-opacity="0.16"/>
+<path d="M533.3 0.0 L533.3 86.7 L622.2 86.7" stroke-opacity="0.29"/>
+<path d="M622.2 0.0 L622.2 86.7 L622.2 86.7" stroke-opacity="0.48"/>
+<path d="M711.1 0.0 L711.1 86.7 L800.0 86.7" stroke-opacity="0.35"/>
+<path d="M0.0 86.7 L0.0 86.7 L88.9 86.7" stroke-opacity="0.30"/>
+<path d="M177.8 86.7 L177.8 173.3 L266.7 173.3" stroke-opacity="0.38"/>
+<path d="M444.4 86.7 L444.4 86.7 L444.4 86.7" stroke-opacity="0.40"/>
+<path d="M533.3 86.7 L533.3 86.7 L533.3 86.7" stroke-opacity="0.38"/>
+<path d="M622.2 86.7 L622.2 86.7 L711.1 86.7" stroke-opacity="0.22"/>
+<path d="M0.0 173.3 L0.0 173.3 L0.0 173.3" stroke-opacity="0.47"/>
+<path d="M355.6 173.3 L355.6 260.0 L355.6 260.0" stroke-opacity="0.50"/>
+<path d="M88.9 260.0 L88.9 346.7 L177.8 346.7" stroke-opacity="0.46"/>
+<path d="M177.8 260.0 L177.8 260.0 L177.8 260.0" stroke-opacity="0.44"/>
+<path d="M266.7 260.0 L266.7 260.0 L266.7 260.0" stroke-opacity="0.45"/>
+<path d="M355.6 260.0 L355.6 260.0 L355.6 260.0" stroke-opacity="0.20"/>
+<path d="M444.4 260.0 L444.4 260.0 L444.4 260.0" stroke-opacity="0.16"/>
+<path d="M533.3 260.0 L533.3 346.7 L533.3 346.7" stroke-opacity="0.48"/>
+<path d="M622.2 260.0 L622.2 346.7 L622.2 346.7" stroke-opacity="0.20"/>
+<path d="M177.8 346.7 L177.8 433.3 L266.7 433.3" stroke-opacity="0.39"/>
+<path d="M266.7 346.7 L266.7 346.7 L266.7 346.7" stroke-opacity="0.40"/>
+<path d="M622.2 346.7 L622.2 346.7 L622.2 346.7" stroke-opacity="0.46"/>
+<path d="M711.1 346.7 L711.1 346.7 L711.1 346.7" stroke-opacity="0.17"/>
+<path d="M0.0 433.3 L0.0 433.3 L88.9 433.3" stroke-opacity="0.12"/>
+<path d="M355.6 433.3 L355.6 520.0 L444.4 520.0" stroke-opacity="0.34"/>
+<path d="M444.4 433.3 L444.4 520.0 L444.4 520.0" stroke-opacity="0.28"/>
+<path d="M711.1 433.3 L711.1 520.0 L800.0 520.0" stroke-opacity="0.28"/>
+</g>
+<rect x="531.1" y="-2.2" width="4.4" height="4.4" fill="#efe6d0" fill-opacity="0.85" filter="url(#glow203)"/>
+<rect x="-1.8" y="171.5" width="3.7" height="3.7" fill="#c4b5fd" fill-opacity="0.85" filter="url(#glow203)"/>
+<rect x="353.1" y="170.8" width="5.0" height="5.0" fill="#efe6d0" fill-opacity="0.85" filter="url(#glow203)"/>
+<rect x="86.4" y="257.5" width="5.0" height="5.0" fill="#c4b5fd" fill-opacity="0.85" filter="url(#glow203)"/>
+<rect x="353.6" y="258.0" width="3.9" height="3.9" fill="#efe6d0" fill-opacity="0.85" filter="url(#glow203)"/>
+<rect x="-3.3" y="343.4" width="6.6" height="6.6" fill="#efe6d0" fill-opacity="0.85" filter="url(#glow203)"/>
+<rect x="87.0" y="344.7" width="3.8" height="3.8" fill="#c4b5fd" fill-opacity="0.85" filter="url(#glow203)"/>
+<rect x="352.5" y="343.6" width="6.0" height="6.0" fill="#efe6d0" fill-opacity="0.85" filter="url(#glow203)"/>
+<rect x="441.2" y="343.4" width="6.6" height="6.6" fill="#efe6d0" fill-opacity="0.85" filter="url(#glow203)"/>
+<rect x="619.5" y="343.9" width="5.5" height="5.5" fill="#efe6d0" fill-opacity="0.85" filter="url(#glow203)"/>
+<rect x="176.3" y="431.8" width="3.0" height="3.0" fill="#efe6d0" fill-opacity="0.85" filter="url(#glow203)"/>
+<rect x="442.8" y="431.7" width="3.2" height="3.2" fill="#efe6d0" fill-opacity="0.85" filter="url(#glow203)"/>
+</svg>

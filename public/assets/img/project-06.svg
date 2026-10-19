@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="800" height="520">
+<defs>
+
+  <radialGradient id="bgrad6" cx="517" cy="275" r="720" gradientUnits="userSpaceOnUse">
+    <stop offset="0%" stop-color="#4c1d95" stop-opacity="0.55"/>
+    <stop offset="35%" stop-color="#141420" stop-opacity="1"/>
+    <stop offset="100%" stop-color="#07070c" stop-opacity="1"/>
+  </radialGradient>
+  <linearGradient id="lgrad6" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#8b5cf6"/>
+    <stop offset="100%" stop-color="#c4b5fd"/>
+  </linearGradient>
+  <filter id="glow6" x="-60%" y="-60%" width="220%" height="220%">
+    <feGaussianBlur stdDeviation="8.0" result="blur"/>
+    <feMerge>
+      <feMergeNode in="blur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+  <filter id="softblur6" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="28.0"/>
+  </filter>
+
+</defs>
+<rect x="0" y="0" width="800" height="520" fill="url(#bgrad6)"/>
+<circle cx="400.0" cy="260.0" r="57.2" fill="#7c3aed" fill-opacity="0.45" filter="url(#softblur6)"/>
+<circle cx="400.0" cy="260.0" r="26.0" fill="#f6efdd" filter="url(#glow6)"/>
+<ellipse cx="400.0" cy="260.0" rx="72.8" ry="34.3" fill="none" stroke="#a78bfa" stroke-opacity="0.35" stroke-width="1" transform="rotate(47 400.0 260.0)"/>
+<circle cx="449.5" cy="313.4" r="4.2" fill="#c4b5fd" filter="url(#glow6)"/>
+<ellipse cx="400.0" cy="260.0" rx="119.6" ry="55.9" fill="none" stroke="#a78bfa" stroke-opacity="0.35" stroke-width="1" transform="rotate(137 400.0 260.0)"/>
+<circle cx="433.5" cy="173.6" r="4.4" fill="#c4b5fd" filter="url(#glow6)"/>
+<ellipse cx="400.0" cy="260.0" rx="166.4" ry="69.6" fill="none" stroke="#a78bfa" stroke-opacity="0.35" stroke-width="1" transform="rotate(144 400.0 260.0)"/>
+<circle cx="457.3" cy="303.8" r="3.5" fill="#c4b5fd" filter="url(#glow6)"/>
+<ellipse cx="400.0" cy="260.0" rx="213.2" ry="103.3" fill="none" stroke="#a78bfa" stroke-opacity="0.35" stroke-width="1" transform="rotate(123 400.0 260.0)"/>
+<circle cx="278.2" cy="270.5" r="3.9" fill="#c4b5fd" filter="url(#glow6)"/>
+</svg>

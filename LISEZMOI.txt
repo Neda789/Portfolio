@@ -1,0 +1,155 @@
+========================================================================
+ PORTFOLIO IA — Neda Stanisic (version React)
+========================================================================
+
+Version React de ton portfolio, construite avec Vite + React Router.
+Le design, les couleurs, les animations et le contenu sont identiques
+a la version HTML precedente — seule l'architecture du code a change.
+
+------------------------------------------------------------------------
+1. INSTALLATION
+------------------------------------------------------------------------
+Il te faut Node.js installe (deja bon si tu as pu utiliser npm avant).
+
+Dans le terminal VS Code, a la racine du projet :
+
+    npm install
+
+Puis pour lancer le site en local (avec rechargement automatique
+a chaque sauvegarde) :
+
+    npm run dev
+
+Ouvre l'adresse affichee dans le terminal (en general
+http://localhost:5173).
+
+------------------------------------------------------------------------
+2. STRUCTURE DU PROJET
+------------------------------------------------------------------------
+src/
+  components/             -> Composants reutilisables :
+      Navbar.jsx, Footer.jsx       -> menu et pied de page (partages
+                                       par toutes les pages)
+      Layout.jsx                   -> assemble Navbar + page + Footer
+      ProjectCard.jsx               -> une carte projet (grille + accueil)
+      ProjectGallery.jsx            -> la diaporama sur la page detail
+      HeroSlideshow.jsx             -> le slideshow de la page d'accueil
+      Reveal.jsx                    -> anime un bloc quand il apparait
+                                       au scroll
+      AnimatedCounter.jsx, SkillBar.jsx, Marquee.jsx, CursorGlow.jsx,
+      BackToTop.jsx                 -> petits composants d'animation
+  pages/                   -> Une page = une route :
+      Home.jsx        -> "/"            (Accueil)
+      About.jsx       -> "/o-meni"      (À propos)
+      Projects.jsx    -> "/projekti"    (grille des 12 projets + filtres)
+      Contact.jsx     -> "/kontakt"     (formulaire de contact)
+      projects/Project01.jsx ... Project12.jsx
+                      -> "/projekti/01" ... "/projekti/12"
+                         UNE page independante PAR projet — tout le
+                         contenu d'un projet (titre, categorie, images,
+                         textes, liens) est ecrit directement dans son
+                         propre fichier. Pas de fichier "data" central :
+                         tu ouvres le fichier du projet et tu modifies.
+  style.css            -> tous les styles (identique a l'ancienne version)
+  App.jsx              -> definit les routes (React Router)
+  main.jsx             -> point d'entree de l'application
+
+public/assets/img/     -> toutes les images (memes fichiers qu'avant)
+
+------------------------------------------------------------------------
+3. MODIFIER LE CONTENU DES PROJETS
+------------------------------------------------------------------------
+Ouvre le fichier du projet que tu veux modifier, ex.
+src/pages/projects/Project01.jsx. Tout est en haut du fichier :
+
+  - CONTENT.fr / CONTENT.en -> titre, categorie, description, apercu,
+    objectifs et resultat, en francais ET en anglais (le site reste
+    bilingue — pense a mettre a jour les deux langues).
+  - TECHS      -> les technologies utilisees (affichees en pastilles).
+  - THUMBNAIL / GALLERY -> les images (mets tes propres fichiers dans
+    public/assets/img/ et remplace les chemins ici).
+  - DEMO_URL / CODE_URL -> tes vraies URL GitHub / demo en ligne.
+
+Le reste du fichier (a partir de "export default function ProjectXX")
+est la mise en page — tu n'as normalement pas besoin d'y toucher.
+
+Si tu changes la categorie d'un projet, mets a jour CATEGORY_SLUG avec
+un slug parmi : machine-learning, deep-learning, computer-vision, nlp,
+data-science, mlops (ou choisis-en un nouveau, du moment que CONTENT.fr/
+en.category et CATEGORY_SLUG restent coherents).
+
+------------------------------------------------------------------------
+4. REMPLACER TON NOM
+------------------------------------------------------------------------
+"Neda Stanisic" apparait dans : src/components/Navbar.jsx,
+src/components/Footer.jsx, et le <title> de chaque page (dans les
+fichiers src/pages/*.jsx, cherche useDocumentHead). Fais un
+Rechercher & Remplacer ("Neda Stanisic" -> ton nom) dans tout le dossier
+src/ (VS Code : Ctrl+Shift+F / Cmd+Shift+F pour chercher dans tous
+les fichiers).
+
+------------------------------------------------------------------------
+5. CONSTRUIRE POUR LA MISE EN LIGNE
+------------------------------------------------------------------------
+Quand tu es prete a publier le site :
+
+    npm run build
+
+Cela cree un dossier dist/ avec les fichiers finaux (HTML/CSS/JS
+optimises), prets a etre deployes.
+
+------------------------------------------------------------------------
+6. HEBERGEMENT
+------------------------------------------------------------------------
+IMPORTANT : contrairement a la version HTML simple, ce site est une
+"Single Page Application" (SPA) — toutes les pages sont gerees par
+JavaScript cote client. Il faut donc que l'hebergeur redirige toutes
+les routes vers index.html, sinon actualiser la page sur /projekti
+ou /kontakt donnera une erreur 404.
+
+  - Netlify : le fichier public/_redirects est deja inclus, ca marche
+    directement (glisse-depose le dossier dist/, ou connecte ton repo
+    GitHub).
+  - Vercel : le fichier vercel.json est deja inclus, ca marche
+    directement en connectant ton repo GitHub.
+  - GitHub Pages : necessite une configuration supplementaire pour les
+    SPA (moins simple) — demande-moi si tu veux partir sur cette
+    option, je t'expliquerai comment faire.
+
+------------------------------------------------------------------------
+7. LANGUE FR / EN (les deux pastilles dans le menu)
+------------------------------------------------------------------------
+Le site est maintenant bilingue : les deux pastilles "FR" / "EN" en haut
+a droite (a cote du bouton "Me contacter") traduisent instantanement
+toutes les pages. Le choix de langue est memorise (localStorage), donc
+un visiteur qui revient garde sa langue.
+
+Fichiers concernes :
+  src/i18n/translations.js   -> TOUT le texte du site, en francais et
+                                 en anglais, range par page/section
+                                 (ex. translations.fr.home.subtitle et
+                                 translations.en.home.subtitle).
+                                 C'est ICI que tu modifies un texte,
+                                 dans les DEUX langues a la fois.
+  src/i18n/LanguageContext.jsx -> le systeme qui gere la langue active
+                                 (tu n'as normalement pas besoin d'y
+                                 toucher).
+  src/components/LanguageSwitcher.jsx -> les deux pastilles FR/EN dans
+                                 le menu (design "pilule" assorti au
+                                 reste du site plutot que des drapeaux,
+                                 pour un rendu net sur tous les
+                                 systemes — dis-moi si tu preferes de
+                                 vraies icones de drapeaux, je peux les
+                                 ajouter).
+
+IMPORTANT : les textes "Lorem ipsum..." (paragraphes de remplissage)
+restent volontairement identiques en FR et en EN, car ce sont de
+simples textes de remplissage sans signification — remplace-les par
+ton propre contenu quand tu es prete, en pensant a fournir une version
+FR ET une version EN dans translations.js a ce moment-la.
+
+Le titre et la categorie de chaque projet (src/data/projects.js) sont
+aussi traduits automatiquement — pas besoin de dupliquer 12 projets,
+un seul fichier de donnees suffit toujours.
+
+Bonne personnalisation ! 🚀

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+<defs>
+
+  <radialGradient id="bgrad104" cx="1402" cy="593" r="1728" gradientUnits="userSpaceOnUse">
+    <stop offset="0%" stop-color="#4c1d95" stop-opacity="0.55"/>
+    <stop offset="35%" stop-color="#141420" stop-opacity="1"/>
+    <stop offset="100%" stop-color="#07070c" stop-opacity="1"/>
+  </radialGradient>
+  <linearGradient id="lgrad104" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#8b5cf6"/>
+    <stop offset="100%" stop-color="#c4b5fd"/>
+  </linearGradient>
+  <filter id="glow104" x="-60%" y="-60%" width="220%" height="220%">
+    <feGaussianBlur stdDeviation="19.2" result="blur"/>
+    <feMerge>
+      <feMergeNode in="blur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+  <filter id="softblur104" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="67.2"/>
+  </filter>
+
+</defs>
+<rect x="0" y="0" width="1920" height="1080" fill="url(#bgrad104)"/>
+<circle cx="960.0" cy="540.0" r="118.8" fill="#7c3aed" fill-opacity="0.45" filter="url(#softblur104)"/>
+<circle cx="960.0" cy="540.0" r="54.0" fill="#f6efdd" filter="url(#glow104)"/>
+<ellipse cx="960.0" cy="540.0" rx="151.2" ry="80.6" fill="none" stroke="#a78bfa" stroke-opacity="0.35" stroke-width="1" transform="rotate(41 960.0 540.0)"/>
+<circle cx="858.4" cy="545.1" r="4.3" fill="#c4b5fd" filter="url(#glow104)"/>
+<ellipse cx="960.0" cy="540.0" rx="248.4" ry="137.0" fill="none" stroke="#a78bfa" stroke-opacity="0.35" stroke-width="1" transform="rotate(3 960.0 540.0)"/>
+<circle cx="1077.8" cy="665.0" r="4.7" fill="#c4b5fd" filter="url(#glow104)"/>
+<ellipse cx="960.0" cy="540.0" rx="345.6" ry="131.2" fill="none" stroke="#a78bfa" stroke-opacity="0.35" stroke-width="1" transform="rotate(118 960.0 540.0)"/>
+<circle cx="936.2" cy="339.5" r="4.1" fill="#c4b5fd" filter="url(#glow104)"/>
+<ellipse cx="960.0" cy="540.0" rx="442.8" ry="250.4" fill="none" stroke="#a78bfa" stroke-opacity="0.35" stroke-width="1" transform="rotate(105 960.0 540.0)"/>
+<circle cx="893.9" cy="167.9" r="3.3" fill="#c4b5fd" filter="url(#glow104)"/>
+<ellipse cx="960.0" cy="540.0" rx="540.0" ry="272.9" fill="none" stroke="#a78bfa" stroke-opacity="0.35" stroke-width="1" transform="rotate(113 960.0 540.0)"/>
+<circle cx="1003.5" cy="63.7" r="3.7" fill="#c4b5fd" filter="url(#glow104)"/>
+</svg>

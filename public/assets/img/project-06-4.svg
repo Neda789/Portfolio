@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="800" height="520">
+<defs>
+
+  <radialGradient id="bgrad604" cx="226" cy="294" r="720" gradientUnits="userSpaceOnUse">
+    <stop offset="0%" stop-color="#4c1d95" stop-opacity="0.55"/>
+    <stop offset="35%" stop-color="#141420" stop-opacity="1"/>
+    <stop offset="100%" stop-color="#07070c" stop-opacity="1"/>
+  </radialGradient>
+  <filter id="glow604" x="-60%" y="-60%" width="220%" height="220%">
+    <feGaussianBlur stdDeviation="8.0" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="softblur604" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="28.0"/>
+  </filter>
+
+</defs>
+<rect x="0" y="0" width="800" height="520" fill="url(#bgrad604)"/>
+<circle cx="400.0" cy="260.0" r="57.2" fill="#7c3aed" fill-opacity="0.45" filter="url(#softblur604)"/>
+<circle cx="400.0" cy="260.0" r="26.0" fill="#f6efdd" filter="url(#glow604)"/>
+<ellipse cx="400.0" cy="260.0" rx="72.8" ry="39.5" fill="none" stroke="#a78bfa" stroke-opacity="0.35" stroke-width="1" transform="rotate(66 400.0 260.0)"/>
+<circle cx="421.9" cy="219.5" r="3.9" fill="#c4b5fd" filter="url(#glow604)"/>
+<ellipse cx="400.0" cy="260.0" rx="119.6" ry="63.9" fill="none" stroke="#a78bfa" stroke-opacity="0.35" stroke-width="1" transform="rotate(169 400.0 260.0)"/>
+<circle cx="420.6" cy="193.3" r="3.8" fill="#c4b5fd" filter="url(#glow604)"/>
+<ellipse cx="400.0" cy="260.0" rx="166.4" ry="66.2" fill="none" stroke="#a78bfa" stroke-opacity="0.35" stroke-width="1" transform="rotate(21 400.0 260.0)"/>
+<circle cx="276.2" cy="264.2" r="4.7" fill="#c4b5fd" filter="url(#glow604)"/>
+<ellipse cx="400.0" cy="260.0" rx="213.2" ry="90.7" fill="none" stroke="#a78bfa" stroke-opacity="0.35" stroke-width="1" transform="rotate(57 400.0 260.0)"/>
+<circle cx="526.9" cy="428.3" r="4.5" fill="#c4b5fd" filter="url(#glow604)"/>
+</svg>
